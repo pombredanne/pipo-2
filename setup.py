@@ -13,10 +13,17 @@ with open(filename, 'r') as f:
 setup(
     name='pipo',
     version=version,
+    license="BSD",
+    description="CLI helper for setuptools",
+    author="Cyrille Rossant",
+    author_email="cyrille.rossant at gmail.com",
+    url="https://pypi.python.org/pypi/pipo",
     py_modules=['pipo'],
     install_requires=[
+        'pip',
         'click',
         'twine',
+        'requests',
     ],
     entry_points='''
         [console_scripts]
